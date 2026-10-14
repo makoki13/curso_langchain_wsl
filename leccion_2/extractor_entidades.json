@@ -1,0 +1,14 @@
+{
+  "system_message": "Eres un extractor de entidades. Devuelve siempre la respuesta en formato JSON válido.",
+  "few_shot_examples": [
+    {
+      "human": "Texto: El iPhone 15 Pro cuesta 1199 dólares y tiene un chip A17 Pro.",
+      "ai": [{"producto": "iPhone 15 Pro", "precio": "1199 dólares", "chip": "A17 Pro"}]
+    },
+    {
+      "human": "Texto: La tablet Galaxy Tab S9 viene con 256GB de almacenamiento por 850 euros.",
+      "ai": [{"producto": "Galaxy Tab S9", "precio": "850 euros", "almacenamiento": "256GB"}]
+    }
+  ],
+  "input_template": "Texto: {texto_usuario}"
+}
