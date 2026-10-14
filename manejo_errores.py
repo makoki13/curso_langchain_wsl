@@ -42,12 +42,12 @@ from groq import AuthenticationError, NotFoundError, APIConnectionError
 
 try:
     ...
-except AuthenticationError as e:
+except AuthenticationError as e: (API error 401)
     print("Error de autenticación. Revisa tu GROQ_API_KEY.", e)
-except NotFoundError as e:
+except NotFoundError as e:  (API error 404)
     print("Modelo no encontrado. Revisa el nombre.", e)
-except APIConnectionError as e:
+except APIConnectionError as e: (No hay conexión HTTP)
     print("Sin conexión con el servidor de Groq.", e)
-except Exception as e:
+except Exception as e: (simepre debe ir al final)
     print("Error inesperado:", e)
 '''
